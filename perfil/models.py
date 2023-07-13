@@ -19,7 +19,7 @@ class Categoria(models.Model):
 
     def total_gasto(self):
         from extrato.models import Valores
-        valores = Valores.objects.filter(categoria__id = self.id).filter(data__month=datetime.now().month).aggregate(Sum('valor'))
+        valores = Valores.objects.filter(categoria__id = self.id,tipo='S').filter(data__month=datetime.now().month).aggregate(Sum('valor'))
         return valores['valor__sum'] if valores['valor__sum'] else 0
 
     def calcula_percentual_gasto_por_categoria(self):

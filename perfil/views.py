@@ -5,7 +5,7 @@ from .models import Conta, Categoria
 from django.contrib import messages
 from django.contrib.messages import constants
 from django.db.models import Sum
-from .utils import calcula_total
+from .utils import calcula_total,get_total_despesas_por_categoria
 
 from extrato.models import Valores
 from contas.models import ContaPagar, ContaPaga
@@ -215,3 +215,28 @@ def dashboard2(request):
         valores = valores if valores is not None else 0
         dados[categoria.categoria] =  valores
     return render(request, 'dashboard.html', {'titulo':titulo,'labels': list(dados.keys()), 'values': list(dados.values())})    
+
+
+def dashboard3(request):
+    titulo='Despesas Mensais Por Categoria'
+    #dados = {}
+    #categorias = Categoria.objects.all()
+    #mes_atual=datetime.now().month
+
+    #for categoria in categorias:
+    #    valores = Valores.objects.filter(tipo='E').filter(data__month=mes_atual).filter(categoria=categoria).aggregate(Sum('valor'))['valor__sum']
+    #    valores = valores if valores is not None else 0
+    #    dados[categoria.categoria] =  valores
+
+    categorias = Categoria.objects.all()
+    valores=Valores.objects.filter(tipo='S')
+    valores = valores if valores is not None else 0
+    dados = get_total_despesas_por_categoria(categorias, valores)
+    dados = dados if dados is not None else 0
+
+    return render(request, 'dashboard3.html', {'despesas_por_categoria':dados,'titulo':titulo,'labels': list(dados.keys()), 'values': list(dados.values())}) 
+
+ 
+
+
+    

@@ -9,7 +9,7 @@
 {% block 'body' %}
     <div class="container">
         <br>
-        <br>
+
         <div class="row">
             <div class="col-md-3">
                 <a style="text-decoration: none; color:white;" href="{% url 'novo_valor' %}">
@@ -44,7 +44,7 @@
             </div>
         </div>
         <br>
-        <br>
+        
        
         <div class="row">
 
@@ -71,9 +71,9 @@
                     </div>
                     <hr class="hr-borda">
                     <a href="{% url 'gerenciar' %}" class="botao-principal">Gerenciar contas</a>
-                    
+                    <hr class="hr-borda">
                 </div>
-                
+              
             </div>
 
             <div class="col-md-8">
@@ -105,7 +105,9 @@
                     <hr class="hr-borda">
                     <a href="{% url 'dashboard2' %}" class="botao-principal">Ver Gráfico de Entradas Mensais</a>
                 </div>
+               
             </div>
+           
 
         </div>
         <br>
@@ -119,8 +121,13 @@
                     <a href="{% url 'definir_planejamento' %}" class="botao-principal">Definir planejamento</a>
                     <hr class="hr-borda">                    
                     <a href="{% url 'ver_planejamento' %}" class="botao-principal">Visualizar planejamento</a>
+                    <hr class="hr-borda">  
+                    <hr class="hr-borda">                                      
+                    <hr class="hr-borda"> 
                 </div>
+                
             </div>
+            
             <div class="col-md-8">
                 <div class="card">
                     <div class="saldo">
@@ -147,6 +154,14 @@
         <br>
         <div class="row">
             <div class="col-md-4">
+                <div class="card">
+                    <div class="saldo">
+                        <span class="fonte-destaque">Gráficos Anuais</span>
+                    </div>
+                    <hr class="hr-borda">
+                    <a  href="{% url 'dashboard3' %}"><img src="{% static 'perfil/img/dashboard.png' %}" alt="Gráficos Anuais" width="90%" height="90%" style="margin-bottom: 57px"></a>
+            
+                </div>
             </div>
             
             <div class="col-md-8">
@@ -164,8 +179,14 @@
                     <span class="fonte-light">{{contas_vencidas_size}} contas vencidas</span>
 
                     <hr class="hr-borda">
+                  
+                    <hr class="hr-borda">
+
                     
+                    
+
                     <a href="{% url 'ver_contas' %}" class="botao-principal">Ver mais</a>
+                    <hr class="hr-borda">
 
                 </div>
             </div>
