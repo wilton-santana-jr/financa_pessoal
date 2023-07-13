@@ -1,0 +1,107 @@
+{% extends 'bases/base.html' %}
+{% load static %}
+{% block 'head' %}
+
+    <link href="{% static 'perfil/css/home.css' %}" rel="stylesheet">
+    <link href="{% static 'perfil/css/gerenciar.css' %}" rel="stylesheet">
+    <link href="{% static 'extrato/css/view_extrato.css' %}" rel="stylesheet">    
+
+    <link href="{% static 'extrato/css/view_extrato.css' %}" rel="stylesheet">   
+    <script>
+
+        function getCookie(c_name)
+        {
+            if (document.cookie.length > 0)
+            {
+                c_start = document.cookie.indexOf(c_name + "=");
+                if (c_start != -1)
+                {
+                    c_start = c_start + c_name.length + 1;
+                    c_end = document.cookie.indexOf(";", c_start);
+                    if (c_end == -1) c_end = document.cookie.length;
+                    return unescape(document.cookie.substring(c_start,c_end));
+                }
+            }
+            return "";
+        }
+    
+    
+    
+        function update_valor_planejamento_categoria(id){
+            valor = document.getElementById('valor-categoria-'+id).value     
+            //console.log(valor)
+            fetch("/planejamento/update_valor_categoria/"+id, {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json",   
+                    "X-CSRFToken": getCookie("csrftoken")         
+                },
+                body: JSON.stringify({novo_valor: valor})            
+            }).then(function(result){  
+                //if(result.status==200)         
+                //alert('Valor do planejamento atualizado com sucesso')
+                //console.log(result.status);
+                 //console.log(result["status"]);
+                //alert(result.status);
+                //alert(result['status']);
+                return result.json()
+            }).then(function(data){            
+                //console.log(data)
+                //console.log(data['status'])
+                if(data['status']=='Sucesso'){
+                   //alert('Valor do planejamento atualizado com sucesso')               
+                   console.log(data['status'])
+                }else{
+                   alert('Ocorreu algum erro ao tentar atualizar o planejamento. Tente novamente em breve.')
+                }   
+    
+            })
+        }
+    </script>
+    
+{% endblock %}
+
+{% block 'body' %}
+
+   
+    <div class="container">
+        <br>
+        <br>
+        <p class="fonte-destaque">Definir planejamento mensal</p>
+        <div class="card">
+            <table>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Valor</th>
+                    <th>Ação</th>
+                </tr>
+                
+                    {% for categoria in categorias %}
+                        <tr class="linha">
+                            <td>{{categoria}}</td>
+                            <td><input type="number" id="valor-categoria-{{categoria.id}}" class="form-control" value="{{categoria.valor_planejamento}}"></td>
+                            <td><button style="width: 100%;" onclick="update_valor_planejamento_categoria({{categoria.id}})" class="botao-secundario">Salvar</button></td>         
+                        </tr>
+                    {% endfor %}
+                
+
+            </table>
+          
+        
+
+        </div>
+
+
+        <div class="card">
+            <div class="saldo">
+                <span class="fonte-destaque">Planejamento</span>
+            </div>
+            <hr class="hr-borda">                    
+            <a href="{% url 'ver_planejamento' %}" class="botao-principal">Visualizar planejamento mensal</a>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

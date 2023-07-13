@@ -1,0 +1,40 @@
+{% load static %}
+
+<div class="card">
+    <table>
+        <tr>
+            <th style="text-align:center;">Conta</th>
+            <th>Categoria</th>
+            <th>Data</th>
+            <th style="text-align:center;" >Tipo</th>
+            <th>Valor</th>
+            
+        </tr>
+        {% for valor in valores %}
+            <tr class="linha">
+                <td > 
+                     
+                    <p style="text-align:center;">
+                        <img   style="width: 65%;"  src="file:{{basedir}}{{valor.conta.icone.url}}"><br> 
+                        <span style="font-size:60%">{{valor.conta}}</span><p>                    
+                </td>
+                <td>{{valor.categoria}}</td>
+                <td>{{valor.data}}</td>
+                <td style="text-align:center;">
+                {% if valor.tipo == 'S'%}                                   
+                    <img src="file:{{path_ent_sai}}\saidas_rel.png"  >                                      
+                {% else %}                                                            
+                    <img src="file:{{path_ent_sai}}\entradas_rel.png"  > 
+                {% endif %}
+                
+                </td>
+                <td>R$ {{valor.valor}}</td>
+                
+            </tr>
+            
+        {% endfor %}
+
+    </table>
+    
+
+</div>
