@@ -40,7 +40,7 @@ Este projeto consiste em um aplicativo web para gestão financeira pessoal.
 
 ![image](https://github.com/wilton-santana-jr/-projeto_financa_pessoal/assets/12551792/faa5d705-60fe-4e15-80d0-15c25bb8d264)
 
-# -Emição de relatórios gráficos mensais de receitas e despesas no mês corrente agrupados por categoria
+# -Emissão de relatórios gráficos mensais de receitas e despesas no mês corrente agrupados por categoria
 
 ![image](https://github.com/wilton-santana-jr/-projeto_financa_pessoal/assets/12551792/d2e76fd4-24e2-4f55-9a5b-3c4291a6c11b)
 
