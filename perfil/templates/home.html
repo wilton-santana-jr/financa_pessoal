@@ -98,8 +98,8 @@
                     <hr class="hr-borda">
                     <span class="fonte-destaque">Total livre</span>
                     <span class="font-light negativo">R$ {{total_livre}}</span>
-                    <hr class="hr-borda">
-                    <a href="{% url 'view_extrato' %}" class="botao-principal">Gerenciar dados mensais</a>
+                    <hr class="hr-borda">                  
+                    <a href="{% url 'view_extrato' %}?conta=todas&categoria=todas&periodo=mesAtual" class="botao-principal">Gerenciar dados mensais</a>
                     <hr class="hr-borda">
                     <a href="{% url 'dashboard' %}" class="botao-principal">Ver Gráfico de Gastos Mensais</a>
                     <hr class="hr-borda">
