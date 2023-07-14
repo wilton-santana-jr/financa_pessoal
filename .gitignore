@@ -1,3 +1,6 @@
 __pycache__
 migrations
-venv
+__pycache__/
+*/__pycache__/
+migrations/
+venv/
