@@ -18,34 +18,33 @@ Este projeto consiste em um aplicativo web para gestão financeira pessoal.
 
 # -Gerenciamento de Contas Bancárias e Categorias de Gastos e Receitas Essenciais
 
-![image](https://github.com/wilton-santana-jr/-projeto_financa_pessoal/assets/12551792/9144b2b5-355d-4de8-ad6a-cefe7b44ee76)
+![image](https://github.com/wilton-santana-jr/financa_pessoal/assets/12551792/2aecf1c9-2839-48f3-aa32-4031995276bb)
 
 # -Gerenciamento de receitas e despesas e geração de extratos bancários de receitas e despesas e exportação via pdf
 
-![image](https://github.com/wilton-santana-jr/-projeto_financa_pessoal/assets/12551792/5489a308-39ca-4b1f-af7e-085c0386036e)
+![image](https://github.com/wilton-santana-jr/financa_pessoal/assets/12551792/6350fad3-9f55-4b34-9ece-b9260282a02a)
 
-![image](https://github.com/wilton-santana-jr/-projeto_financa_pessoal/assets/12551792/040fe397-0604-4dac-816f-72d4d741f33d)
+![image](https://github.com/wilton-santana-jr/financa_pessoal/assets/12551792/c0ee6b64-741e-4bcf-b286-6222388f976b)
 
-![image](https://github.com/wilton-santana-jr/-projeto_financa_pessoal/assets/12551792/e3aa624c-bb80-4ecc-a060-d2b5791e8c86)
+![image](https://github.com/wilton-santana-jr/financa_pessoal/assets/12551792/2457aa12-f1a0-4f41-82c5-4c57e37a99a6)
 
 # -Gerenciamento do planejamento financeiro com gastos mensais
 
-![image](https://github.com/wilton-santana-jr/-projeto_financa_pessoal/assets/12551792/625c8106-15fb-4879-a19f-e63784dfac32)
+![image](https://github.com/wilton-santana-jr/financa_pessoal/assets/12551792/9652616a-ca75-4bc8-aaac-a16ba930c1a5)
 
 ![image](https://github.com/wilton-santana-jr/financa_pessoal/assets/12551792/ae302ac3-e0b3-4af9-bbce-a0cace7f9fb9)
 
-
 # -Gerenciamento de Contas, Boletos e Faturas a Pagar do mês corrente
 
-![image](https://github.com/wilton-santana-jr/-projeto_financa_pessoal/assets/12551792/6fdf62f9-4ae9-4689-b37e-c57776f52d96)
+![image](https://github.com/wilton-santana-jr/financa_pessoal/assets/12551792/e0bc14f9-836b-4f9f-a4d9-90b7a32b50d9)
 
-![image](https://github.com/wilton-santana-jr/-projeto_financa_pessoal/assets/12551792/faa5d705-60fe-4e15-80d0-15c25bb8d264)
+![image](https://github.com/wilton-santana-jr/financa_pessoal/assets/12551792/c94d3ad5-34c1-4122-9f8c-e80f1a0d0349)
 
 # -Emissão de relatórios gráficos mensais de receitas e despesas no mês corrente agrupados por categoria
 
-![image](https://github.com/wilton-santana-jr/-projeto_financa_pessoal/assets/12551792/d2e76fd4-24e2-4f55-9a5b-3c4291a6c11b)
+![image](https://github.com/wilton-santana-jr/financa_pessoal/assets/12551792/ce4fff1d-5ea0-4a77-b6ad-d80495c8d832)
 
-![image](https://github.com/wilton-santana-jr/-projeto_financa_pessoal/assets/12551792/4257993d-8753-4847-a6ea-1e85202894f1)
+![image](https://github.com/wilton-santana-jr/financa_pessoal/assets/12551792/00e4d3c2-4442-46fc-8a9a-0a2298b2bb88)
 
 ![image](https://github.com/wilton-santana-jr/financa_pessoal/assets/12551792/b8bb140b-8b54-4baa-8bba-eb6484263a9e)
 
